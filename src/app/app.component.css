@@ -1,0 +1,14 @@
+.image-container {
+  height: 100%;
+}
+
+.bg-image {
+  height: 100vh;
+  background-image: url("../assets/img/rotom.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Workbench&display=swap");
+@import "remixicon/fonts/remixicon.css";
+
+.search-bar-container {
+  text-align: center;
+  position: relative;
+  display: flex;
+  border: none;
+}
+
+input {
+  width: 400px;
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: rgb(200, 200, 200);
+  font-family: "Workbench", sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+button {
+  border: none;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+button:hover {
+  height: 60px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(162, 162, 162);
+}
