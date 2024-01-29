@@ -1,4 +1,17 @@
-<div class="search-bar-container">
-  <input name="pokemon-name" type="text" placeholder="Search For Pokemon" />
-  <button type="submit"><i class="ri-search-line"></i></button>
-</div>
+<ng-container class="container">
+  <div class="search-bar">
+    <form>
+      <!-- <label for="pokemonName"> Enter Pokemon Name: </label> -->
+      <input
+        name="pokemonName"
+        required
+        type="text"
+        placeholder="Search For Pokemon"
+        [(ngModel)]="pokemonName"
+      />
+      <button type="button" (click)="onSubmit()">
+        <i class="ri-search-line"></i>
+      </button>
+    </form>
+  </div>
+</ng-container>

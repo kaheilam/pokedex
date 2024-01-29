@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Workbench&display=swap");
+
+h1 {
+  padding-bottom: 20px;
+  font-family: "Workbench", sans-serif;
+  letter-spacing: 2px;
+}
+
+img {
+  padding-bottom: 30px;
+  width: 50%;
+  height: auto;
+}
+
+.pokemon-info {
+  display: flex;
+}
+.stat-list {
+  display: flex;
+}
+.stat-list p {
+  padding-right: 10px;
+}
+
+.stat-bar {
+  position: relative;
+  width: 200px;
+  height: 20px;
+  background-color: rgb(255, 98, 98);
+  border: 1px solid rgb(115, 43, 43);
+}
+
+.filled-bar {
+  height: 100%;
+  background-color: rgb(248, 22, 22);
+}
+
+.go-back-button {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 300px;
+  padding: 10px;
+  border: none;
+  background-color: rgb(161, 161, 161);
+}
+
+button:hover {
+  background-color: rgb(107, 107, 107);
+}

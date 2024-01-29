@@ -1,0 +1,36 @@
+<div *ngIf="pokemon">
+  <h1>{{ pokemon.name }}</h1>
+
+  <div class="pokemon-info">
+    <div class="left-column">
+      <!-- [src]="pokemon.sprites.front_default" -->
+      <!--  [src]="'https://img.pokemondb.net/artwork/' + pokemon.name + '.jpg'" -->
+      <img
+        [src]="'https://img.pokemondb.net/artwork/' + pokemon.name + '.jpg'"
+        alt="{{ pokemon.name }}"
+      />
+    </div>
+    <div class="right-column">
+      <p>Base Stat</p>
+      <div>
+        <div class="stat-list">
+          <p>HP:</p>
+          <div class="stat-bar">
+            <div
+              class="filled-bar"
+              [style.width.%]="calculateWidth(pokemon.stats[0].base_stat)"
+            ></div>
+          </div>
+        </div>
+        <!-- <p>Attack:</p>
+        <p>Defense:</p>
+        <p>Sp. Atk:</p>
+        <p>Sp. Def:</p>
+        <p>Speed:</p> -->
+      </div>
+    </div>
+  </div>
+  <div class="go-back-button">
+    <button type="button" (click)="Back()">Back</button>
+  </div>
+</div>

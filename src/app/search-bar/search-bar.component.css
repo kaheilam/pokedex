@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Workbench&display=swap");
 @import "remixicon/fonts/remixicon.css";
 
-.search-bar-container {
+.search-bar {
   text-align: center;
   position: relative;
   display: flex;
